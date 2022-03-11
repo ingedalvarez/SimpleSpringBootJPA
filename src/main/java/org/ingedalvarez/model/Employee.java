@@ -1,6 +1,13 @@
 package org.ingedalvarez.model;
 
+
+import javax.persistence.Entity;
+
+import org.springframework.data.annotation.Id;
+
+@Entity
 public class Employee {
+	@Id
 	private int id;
 	private String name;
 	private byte age;
