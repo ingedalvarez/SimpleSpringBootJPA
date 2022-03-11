@@ -17,5 +17,11 @@
 		Salary: <input type="text" name="salary"><br>
 		<input type="submit"><br>
 	</form>
+	
+	<h3>Consultar employee por ID</h3>
+	<form action="showEmployee">
+		ID: <input type="text" name="id"><br> 
+		<input type="submit"><br>
+	</form>
 </body>
 </html>
