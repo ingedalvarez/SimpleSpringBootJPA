@@ -11,7 +11,7 @@ uso basico de querys JPQL personalizadas.
 En este ejemplo se crea un modelo sencillo de una sola clase llamada employee
 con los campos basicos: id, nombre, edad, salario.
 
-El controlador de esta clase es un controlador SpringBoot llamado EmployeeControler.
+El controlador de esta clase es un controlador SpringBoot llamado HomeController.
 
 Se implementa una capa DAO con una interfaz EnployeeRepo que extiende de CrudRepository.
 
