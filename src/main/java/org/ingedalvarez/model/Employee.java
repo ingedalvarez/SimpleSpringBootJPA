@@ -9,7 +9,7 @@ public class Employee {
 	@Id
 	private int id;
 	private String name;
-	private byte age;
+	private int age;
 	private float salary;
 	
 	@Override
@@ -33,11 +33,11 @@ public class Employee {
 		this.name = name;
 	}
 
-	public byte getAge() {
+	public int getAge() {
 		return age;
 	}
 
-	public void setAge(byte age) {
+	public void setAge(int age) {
 		this.age = age;
 	}
 

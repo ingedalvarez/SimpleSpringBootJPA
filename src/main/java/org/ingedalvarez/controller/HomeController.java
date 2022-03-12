@@ -37,8 +37,15 @@ public class HomeController {
 		allEmpIterable.forEach(allEmp::add);
 		ModelAndView mv = new ModelAndView();
 		mv.addObject("allEmp", allEmp);
-		mv.setViewName("showAllEmployees");
-		
+		mv.setViewName("showAllEmployees");		
+		return mv;
+	}
+
+	@RequestMapping("addEmployee")
+	public ModelAndView addEmployee(Employee emp) {
+		ModelAndView mv = new ModelAndView("addEmployee");
+		Employee empAdded = repo.save(emp);
+		mv.addObject("empAdded", empAdded);
 		return mv;
 	}
 }
