@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>showEmployee.jsp page</title>
+<title>showAllEmployees.jsp page</title>
 </head>
 <body>
 	<h1>Welcome from showAllEmployee.jsp page.</h1>

@@ -37,7 +37,7 @@ public class HomeController {
 		allEmpIterable.forEach(allEmp::add);
 		ModelAndView mv = new ModelAndView();
 		mv.addObject("allEmp", allEmp);
-		mv.setViewName("home");
+		mv.setViewName("showAllEmployees");
 		
 		return mv;
 	}
