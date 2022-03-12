@@ -8,7 +8,7 @@
 </head>
 <body>
 	<h1>Welcome from showEmployee.jsp page.</h1>
-	${employee }
+	${emp }
 	
 </body>
 </html>
