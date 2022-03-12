@@ -35,8 +35,7 @@ public class HomeControllerHttpRequest {
 		assertEquals(200, mv.getStatusCodeValue());
 
 	}
-	
-	
+		
 	@Test
 	@DisplayName("home controller return String home")
 	void homeControllerTest() throws Exception {
