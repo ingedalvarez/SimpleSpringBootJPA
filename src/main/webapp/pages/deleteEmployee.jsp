@@ -4,11 +4,11 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>showAllEmployees.jsp page</title>
+<title>addEmployee.jsp page</title>
 </head>
 <body>
-	<h1>Welcome from showAllEmployee.jsp page.</h1>
-	${allEmp.toString() }
+	<h1>Welcome from addEmployee.jsp page.</h1>
+	${empAdded.toString() }
 	
 </body>
 </html>

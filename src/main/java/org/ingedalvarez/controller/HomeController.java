@@ -48,4 +48,13 @@ public class HomeController {
 		mv.addObject("empAdded", empAdded);
 		return mv;
 	}
+
+	@RequestMapping("deleteEmployee")
+	public ModelAndView deleteEmployee(int id) {
+		Employee emp = repo.findById(id).orElseThrow();
+		ModelAndView mv = new ModelAndView("deleteEmployee");
+		mv.addObject("delEmp", emp);
+		repo.deleteById(id);
+		return mv;
+	}
 }
