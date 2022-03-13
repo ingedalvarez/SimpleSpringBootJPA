@@ -51,10 +51,15 @@ public class HomeController {
 
 	@RequestMapping("deleteEmployee")
 	public ModelAndView deleteEmployee(int id) {
-		Employee emp = repo.findById(id).orElseThrow();
-		ModelAndView mv = new ModelAndView("deleteEmployee");
-		mv.addObject("delEmp", emp);
-		repo.deleteById(id);
+		ModelAndView mv = new ModelAndView("/error/noidfound");
+		Employee emp = repo.findById(id).orElse(new Employee());
+		
+		if(emp.getId()!=0) {
+			mv.setViewName("deleteEmployee");
+			mv.addObject("delEmp", emp);
+			repo.deleteById(id);
+		}
+					
 		return mv;
 	}
 }

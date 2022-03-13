@@ -8,7 +8,11 @@
 </head>
 <body>
 	<h1>Welcome from addEmployee.jsp page.</h1>
-	${empAdded.toString() }
+	${delEmp.toString() }
+	
+	<form action="/">
+		<input type="submit" value="Home"><br>
+	</form>
 	
 </body>
 </html>

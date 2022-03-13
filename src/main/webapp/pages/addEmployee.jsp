@@ -10,5 +10,9 @@
 	<h1>Welcome from addEmployee.jsp page.</h1>
 	${empAdded.toString() }
 	
+	<form action="/">
+		<input type="submit" value="Home"><br>
+	</form>
+	
 </body>
 </html>

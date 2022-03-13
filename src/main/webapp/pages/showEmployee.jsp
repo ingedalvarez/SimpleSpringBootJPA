@@ -10,5 +10,9 @@
 	<h1>Welcome from showAllEmployee.jsp page.</h1>
 	${emp }
 	
+	<form action="/">
+		<input type="submit" value="Home"><br>
+	</form>
+	
 </body>
 </html>
